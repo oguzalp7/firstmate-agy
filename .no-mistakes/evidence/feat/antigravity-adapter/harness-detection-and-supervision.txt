@@ -1,0 +1,48 @@
+=== HARNESS MARKER DETECTION ===
+ANTIGRAVITY_AGENT=1 bin/fm-harness.sh marker => agy
+AGY_AGENT=1 bin/fm-harness.sh marker => agy
+ANTIGRAVITY_AGENT=1 bin/fm-harness.sh => agy
+
+=== SUPERVISION INSTRUCTIONS (--harness agy) ===
+================================================================================
+SUPERVISION OPERATING INSTRUCTIONS - primary harness: agy
+================================================================================
+Current state:
+- Lock: held by this session; this session owns normal supervision unless away mode says otherwise.
+- Away/quiet mode: inactive.
+- X mode: inactive; use the default watcher cadence.
+- Ordinary wake: follow the continuation in the harness protocol below; do not use shell &.
+
+Mode: Antigravity agentic supervision.
+
+When this session owns supervision and away mode is not active:
+1. Drain first with `bin/fm-wake-drain.sh`.
+   After handling all emitted wakes and reconciling open decisions and unread status lines, run the exact `--ack-through` command printed as `WAKE_ACK_REQUIRED`; until then the work remains durable for idempotent re-handling after interruption.
+2. Source `/home/oguz/.no-mistakes/worktrees/50e9b9d71306/01M4R5KRRYDC6QB6ZED4BB590D/config/x-mode.env` first when Relay is active.
+3. Ordinary wake: drain queued wakes, handle that wake, reconcile open decisions and unread status lines, and run the printed `--ack-through` command.
+4. Supervision: Antigravity manages background tasks through its native agentic runtime (`manage_task`, `run_command`, `schedule`, `invoke_subagent`).
+   Reactive wakeup is handled automatically by the Antigravity messaging system when background tasks complete.
+   For fleet-wide watcher polling, run `bin/fm-watch.sh` or `bin/fm-watch-checkpoint.sh`.
+
+
+=== SUPERVISION INSTRUCTIONS (--harness antigravity) ===
+================================================================================
+SUPERVISION OPERATING INSTRUCTIONS - primary harness: antigravity
+================================================================================
+Current state:
+- Lock: held by this session; this session owns normal supervision unless away mode says otherwise.
+- Away/quiet mode: inactive.
+- X mode: inactive; use the default watcher cadence.
+- Ordinary wake: follow the continuation in the harness protocol below; do not use shell &.
+
+Mode: Antigravity agentic supervision.
+
+When this session owns supervision and away mode is not active:
+1. Drain first with `bin/fm-wake-drain.sh`.
+   After handling all emitted wakes and reconciling open decisions and unread status lines, run the exact `--ack-through` command printed as `WAKE_ACK_REQUIRED`; until then the work remains durable for idempotent re-handling after interruption.
+2. Source `/home/oguz/.no-mistakes/worktrees/50e9b9d71306/01M4R5KRRYDC6QB6ZED4BB590D/config/x-mode.env` first when Relay is active.
+3. Ordinary wake: drain queued wakes, handle that wake, reconcile open decisions and unread status lines, and run the printed `--ack-through` command.
+4. Supervision: Antigravity manages background tasks through its native agentic runtime (`manage_task`, `run_command`, `schedule`, `invoke_subagent`).
+   Reactive wakeup is handled automatically by the Antigravity messaging system when background tasks complete.
+   For fleet-wide watcher polling, run `bin/fm-watch.sh` or `bin/fm-watch-checkpoint.sh`.
+

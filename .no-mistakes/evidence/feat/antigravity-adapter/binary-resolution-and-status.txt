@@ -1,0 +1,4 @@
+RESOLVED_BIN=/mnt/c/Users/oguz_/AppData/Local/agy/bin/agy.exe
+ACTIVE_ANTIGRAVITY=true
+ACTIVE_AGY=true
+ACTIVE_GEMINI=false

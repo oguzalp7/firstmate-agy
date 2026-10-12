@@ -1,0 +1,21 @@
+MATCH_AGY=ok
+MATCH_ANTIGRAVITY=ok
+MATCH_AGY_EXE=ok
+MATCH_ANTIGRAVITY_EXE=ok
+MATCH_PATH_AGY=ok
+DECOY_MAGY=ok
+DECOY_AGYSYNC=ok
+DECOY_BAGY=ok
+DECOY_PYTHON_ARGS=ok
+RE_AGY=ok
+RE_ANTIGRAVITY=ok
+RE_MAGY=ok
+RE_AGYSYNC=ok
+
+=== ADVERSARIAL PROCESS ANCESTRY LOCK ATTEMPTS ===
+magy ancestry exit code: 1
+magy stderr: error: cannot locate harness process in ancestry
+
+agysync ancestry exit code: 1
+agysync stderr: error: cannot locate harness process in ancestry
+
